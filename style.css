@@ -161,7 +161,7 @@ zzz > a:hover:before {
   .topnav a {
       font-size: 20px;
   }
-  .press a {
+  .main-selection a {
       font-size: 18px;
   }
 }
@@ -171,7 +171,7 @@ zzz > a:hover:before {
       font-size: 12px;
   }
 
-  .press a {
+  .main-selection a {
       font-size: 12px;
   }
 }
@@ -250,44 +250,76 @@ zzz > a:hover:before {
 }
 
 
-
-.press {
+.main-selection, .other-selection {
     display: block;  /* Remove bullet points; allow greater control of positioning */
     padding: 0;      /* Override defaults for lists */
     margin: 0;       /* Override defaults for lists */
     width: 100%;     /* Get the row full width */
 }
 
-.press a {
+.main-selection a, .other-selection a {
     color: #000000;
 }
 
-.press-logo{
-    text-decoration: none;
+//.press-logo{
+    //text-decoration: none;
     //padding: 15px 40px;
-    border-radius: 4px;
-    font-weight: normal;
+    //border-radius: 4px;
+    //font-weight: normal;
+//}
+
+.main-selection li {
+    width: 25%;            /* Show 4 logos per row */
 }
 
-.press li {
+.other-selection li {
+    width: 33%;            /* Show 3 logos per row */
+}
+
+.main-selection li, .other-selection li {
     display: inline-block; /* Get all images to show in a row */
-    width: 25%;            /* Show 4 logos per row */
     text-align: center;    /* Centre align the images */
     padding: 5% 0px;
     transition: all 0.2s ease-in-out;
 }
 
-.press li:hover{
+
+.main-selection li:hover, .other-selection li:hover{
     //box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
     -webkit-filter: drop-shadow(0px 0px 10px rgba(167,16,178,0.5));
 }
 
+.divider{
+        position: absolute;
+        z-index: -1;
+}
+
+.goals {
+     margin-left: 20%;
+     margin-right: 20%;
+     margin-top:10%;
+     margin-bottom:5%;
+}
+
+.goals p{
+    color: #777777;
+    
+}
+
 @media (max-width: 960px) and (min-width: 501px) {
-    .press li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+    .main-selection li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+    .goals {
+         margin-left: 10%;
+         margin-right: 10%;
+    }
 }
 
 @media (max-width: 500px) {
-    .press li { width: 50%; } /* On small screens, show one logo per row */
-    .press img {width: 25%;
+    .main-selection li { width: 50%; } /* On small screens, show one logo per row */
+    .main-selection img {width: 25%;
+    }
+    .goals {
+         margin-left: 0%;
+         margin-right: 0%;
     }
 }
