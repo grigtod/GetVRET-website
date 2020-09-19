@@ -29,22 +29,8 @@ body {
 }
 
 #topText, #topImage {display: inline-block; *display: inline; vertical-align: top;}
-#topText {width: 49%;text-align:left;vertical-align: bottom; font-size:1.8vw; }
+#topText {width: 49%;text-align:left;vertical-align: top; color: #ffffff /*font-size:1.8vw; */}
 #topImage {width: 49%;}
-
-#topText > h1 {
-    min-height: 8px;
-    //padding-left:5%;
-    color: #ffffff;;
-}
-
-#topText > h4 {
-    min-height: 10px;
-    padding-bottom: 20%;
-    //padding-left: 3%;
-    color: #ffffff;
-}
-
 
 #bottomImage, #bottomText {display: inline-block; *display: inline; vertical-align: top;}
 #bottomText {width: 49%;text-align:left;vertical-align: bottom; font-size:1.8vw; }
@@ -148,24 +134,16 @@ zzz > a:hover:before {
   width: 80%;
 }
 
-@media screen and (min-width: 1200px) {
-  h1 {
-      font-size: 48px;
-  }
-  h4 {
-      font-size: 32px;
+
+@media screen and (max-width: 316px) {
+  .topnav a {
+      font-size: 8px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 400px) {
   .topnav a {
-      font-size: 20px;
-  }
-  .main-selection a {
-      font-size: 18px;
-  }
-  .other-selection p{
-      font-size: 18px;
+      font-size: 8px;
   }
 }
 
@@ -185,23 +163,70 @@ zzz > a:hover:before {
   }
 }
 
-@media screen and (max-width: 401px) {
+@media screen and (min-width: 100px) {
+    h1 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 0px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    h1 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 0px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    h1 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 34px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+  h1 {
+      font-size: 44px;
+  }
   h4 {
-      font-size: 0px;
+      font-size: 20px;
+  }
+  .topnav a {
+      font-size: 20px;
+  }
+  .main-selection a {
+      font-size: 18px;
+  }
+  .other-selection p{
+      font-size: 18px;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .topnav a {
-      font-size: 8px;
-  }
-}
 
-@media screen and (max-width: 316px) {
-  .topnav a {
-      font-size: 8px;
-  }
-}
 
 @media (max-width: 400px) { /* For small screen decices */
      *{
