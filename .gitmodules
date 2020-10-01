@@ -1,0 +1,3 @@
+[submodule "pages/painManagement/game"]
+	path = pages/painManagement/game
+	url = https://github.com/grigtod/painManagementGame
