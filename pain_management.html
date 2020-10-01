@@ -10,15 +10,20 @@
 <body>
     <div id="all_topGradient"></div>
     <div id="all_navbar"></div>
-    <div id="home_topFloaters"></div>
-    <div id="home_therapiesList"></div>
-    <div id="home_divider"></div>
+    <div id="painManagement_topFloaters"></div>
+    <div id="painManagement_firstPart"></div>
+    <div id="all_divider"></div>
 
     <div class = "bottomHalf">
-        <div id="home_learnMoreList"></div>
+        <div id="painManagement_secondPart"></div>
         <div id="all_bottomGradient"></div>
     </div>
 </body>
 <script type="text/javascript" src="code/jquery.min.js"></script>
 <script type="text/javascript" src="code/reuseElements.js"></script>
+<script>
+    $(function () { $('#painManagement_topFloaters').load('pages/painManagement/painManagement_topFloaters.html');});
+    $(function () { $('#painManagement_firstPart').load('pages/painManagement/painManagement_firstPart.html');});
+    $(function () { $('#painManagement_secondPart').load('pages/painManagement/painManagement_secondPart.html');});
+</script>
 </html>

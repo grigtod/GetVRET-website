@@ -383,14 +383,14 @@ nav > a:hover:before {
     }
 }
 
-.videoContainer {
+.videoContainer, .gameContainer {
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
     z-index: -1;
 }
-.video {
+.video, .game {
     position: absolute;
     top: 0;
     left: 0;
