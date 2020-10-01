@@ -108,17 +108,17 @@ section {
 }
 
 
-zzz > a {
+nav > a {
   position: relative;
   //color: #000;
   text-decoration: none;
 }
 
-zzz > a:hover {
+nav > a:hover {
   //color: #000;
 }
 
-zzz > a:before {
+nav > a:before {
   content: "";
   position: absolute;
   width: 0%;
@@ -130,7 +130,7 @@ zzz > a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-zzz > a:hover:before {
+nav > a:hover:before {
   width: 80%;
 }
 
@@ -155,10 +155,10 @@ zzz > a:hover:before {
   .main-selection a {
       font-size: 12px;
   }
-  .other-selection span{
+  .other-selection span, .double-selection span, .single-selection span{
        font-size: 10px;
   }
-  .other-selection p{
+  .other-selection p, .double-selection p, .single-selection p{
       font-size: 10px;
   }
 }
@@ -221,7 +221,7 @@ zzz > a:hover:before {
   .main-selection a {
       font-size: 18px;
   }
-  .other-selection p{
+  .other-selection p, .double-selection p, .single-selection p{
       font-size: 18px;
   }
 }
@@ -295,14 +295,14 @@ zzz > a:hover:before {
 }
 
 
-.main-selection, .other-selection {
+.main-selection, .other-selection, .double-selection, .single-selection {
     display: block;  /* Remove bullet points; allow greater control of positioning */
     padding: 0;      /* Override defaults for lists */
     margin: 0;       /* Override defaults for lists */
     width: 100%;     /* Get the row full width */
 }
 
-.main-selection a, .other-selection a {
+.main-selection a, .other-selection a, .double-selection a, .single-selection a {
     color: #000000;
 }
 
@@ -321,7 +321,15 @@ zzz > a:hover:before {
     width: 33%;            /* Show 3 logos per row */
 }
 
-.main-selection li, .other-selection li {
+.double-selection li{
+    width: 50%;            /* Show 2 logos per row */
+}
+
+.single-selection li{
+    width: 100%;
+}
+
+.main-selection li, .other-selection li, .double-selection li, .single-selection li {
     display: inline-block; /* Get all images to show in a row */
     text-align: center;    /* Centre align the images */
     padding: 5% 0px;
@@ -373,4 +381,19 @@ zzz > a:hover:before {
          margin-left: 0%;
          margin-right: 0%;
     }
+}
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    z-index: -1;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
